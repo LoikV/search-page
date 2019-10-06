@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Search page</title>
+</head>
+
+<body>
+    <div class='search-wrap'>
+        <input id='search-input' type="text" style="min-width: 320px" placeholder="Введите текст для поиска">
+        <select id="search-select">
+            <option value="" selected disabled hidden>Укажите поисковую систему</option>
+            <option value="google">google.com</option>
+            <option value="bing">bing.com</option>
+            <option value="ask">ask.com</option>
+        </select>
+        <button id='search-btn'>Искать</button>
+    </div>
+    <p id="error-empty__field" style="color: red" hidden='hidden'>Введите поисковый запрос</p>
+    <p id="error-empty__select" style="color: red" hidden='hidden'>Выберите поисковую систему</p>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
